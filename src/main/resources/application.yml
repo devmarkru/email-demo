@@ -1,0 +1,10 @@
+spring:
+  mail:
+    host: mail.example.com
+    port: 25
+    username: username
+    password: pa$$w0rd
+    test-connection: true # проверить подключение при старте приложения
+    sender: # отправитель письма (его почта и имя)
+      email: no-reply@example.com
+      text: no-reply
