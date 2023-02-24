@@ -1,16 +1,16 @@
 spring:
   mail:
-    host: smtp.gmail.com
-    port: 587
-    username: from.email@gmail.com # логин от учётки Google
-    password: "somepassword" # специальный пароль для приложения (см. Google Account)
+    host: smtp.yandex.ru
+    port: 465
+    username: your_name # логин от учётки Yandex
+    password: your_password # специальный пароль для приложения
     test-connection: true # проверка подключения при старте приложения
     properties:
       mail:
         smtp:
           auth: true
-          starttls:
+          ssl:
             enable: true
     sender: # отправитель письма (его почта и имя)
-      email: no-reply@example.com
+      email: your_name@yandex.ru
       text: no-reply
